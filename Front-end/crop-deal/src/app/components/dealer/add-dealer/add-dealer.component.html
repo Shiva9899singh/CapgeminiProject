@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<div class="col-md-6 offset-md-3">
+    <h2> Dealer Registrations </h2>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label>Dealer Name</label>
+            <input type="text" class ="form-control" id = "dealer_name"
+                [(ngModel)] = "dealer.dealer_name" name = "dealerName">
+        </div>
+    
+        <div class="form-group">
+            <label>Dealer Contact Number</label>
+            <input type="text" class ="form-control" id = "dealer_contactNo"
+                [(ngModel)] = "dealer.dealer_contactNo" name = "dealer_contactNo">
+        </div>
+        <div class="form-group">
+            <label>Dealer emailId</label>
+            <input type="text" class ="form-control" id = "dealer_contactNo"
+                [(ngModel)] = "dealer.dealer_email" name = "dealer_contactNo">
+        </div>
+        
+    
+        <button class = "btn btn-success" type ="submit">Resgister</button>
+    
+    </form>
+    </div> 
+
+
+
